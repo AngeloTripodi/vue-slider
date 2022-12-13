@@ -30,7 +30,7 @@
                     <div class="prev" @click="prevButton()"></div>
                     <div class="next" @click="nextButton()"></div>
                     <div class="thumb">
-                        <img v-for:="(image, index) in slides" :src="image.image" :alt="image.title" :class="(index === activeIndex) ? 'active' : '' "/>
+                        <img v-for:="(image, index) in slides" :src="image.image" :alt="image.title" :class="(index === activeIndex) ? 'active' : '' " @click="activeThumb(index)"/>
                     </div>
                 </div>
 

@@ -67,5 +67,8 @@ createApp({
                 this.activeIndex = 0;
             }
         },
+        activeThumb : function(index){
+            this.activeIndex=index;
+        },
     }
 }).mount('#app')
