@@ -63,7 +63,7 @@ createApp({
         },
         nextButton : function(){
             this.activeIndex++;
-            if(this.activeIndex >= 4){
+            if(this.activeIndex > 4){
                 this.activeIndex = 0;
             }
         },
